@@ -103,6 +103,18 @@
       box-shadow: 0 4px 16px rgba(78, 205, 196, 0.2);
     }
 
+    .lyric-card.ktv-active {
+      background: linear-gradient(135deg, #fff0f5, #fce4ec);
+      box-shadow: 0 6px 24px rgba(233, 30, 99, 0.25);
+      border-left-width: 6px;
+      border-left-color: #e91e63 !important;
+      transform: scale(1.03);
+    }
+
+    .lyric-card.ktv-active .lyric-en {
+      color: #e91e63;
+    }
+
     .lyric-card:nth-child(8n+1) { border-left-color: #f48fb1; }
     .lyric-card:nth-child(8n+2) { border-left-color: #81d4fa; }
     .lyric-card:nth-child(8n+3) { border-left-color: #a5d6a7; }
@@ -328,81 +340,81 @@
         title: "第一段",
         audio: "audio/part1.mp3",
         lines: [
-          { en: "Twisting and turning, down this road we go", zh: "彎彎繞繞，沿著這條路往前走", lineAudio: "audio/lines/p1-l1.mp3" },
-          { en: "Running to the forest where we can play all day", zh: "跑進森林裡，在那兒玩上一整天", lineAudio: "audio/lines/p1-l2.mp3" },
-          { en: "The sun shines so brightly on our country town", zh: "陽光燦爛地照耀著我們的小鎮", lineAudio: "audio/lines/p1-l3.mp3" },
-          { en: "Someone's always calling out your name", zh: "總有人在呼喚你的名字", lineAudio: "audio/lines/p1-l4.mp3" }
+          { en: "Twisting and turning, down this road we go", zh: "彎彎繞繞，沿著這條路往前走", lineAudio: "audio/lines/p1-l1.mp3", t: 0 },
+          { en: "Running to the forest where we can play all day", zh: "跑進森林裡，在那兒玩上一整天", lineAudio: "audio/lines/p1-l2.mp3", t: 7.2 },
+          { en: "The sun shines so brightly on our country town", zh: "陽光燦爛地照耀著我們的小鎮", lineAudio: "audio/lines/p1-l3.mp3", t: 11.7 },
+          { en: "Someone's always calling out your name", zh: "總有人在呼喚你的名字", lineAudio: "audio/lines/p1-l4.mp3", t: 16.7 }
         ]
       },
       {
         title: "第二段",
         audio: "audio/part2.mp3",
         lines: [
-          { en: "And when summer comes, see our shadows grow", zh: "當夏天來臨，看我們的影子越來越長", lineAudio: "audio/lines/p2-l1.mp3" },
-          { en: "Always know I will miss you so", zh: "你要知道，我會非常想念你", lineAudio: "audio/lines/p2-l2.mp3" },
-          { en: "Come on, look up, find the first star in the sky", zh: "來吧，抬頭看，找到天空中的第一顆星星", lineAudio: "audio/lines/p2-l3.mp3" },
-          { en: "I hope tomorrow will be sunny, too", zh: "希望明天也是晴朗的好天氣", lineAudio: "audio/lines/p2-l4.mp3" }
+          { en: "And when summer comes, see our shadows grow", zh: "當夏天來臨，看我們的影子越來越長", lineAudio: "audio/lines/p2-l1.mp3", t: 0.9 },
+          { en: "Always know I will miss you so", zh: "你要知道，我會非常想念你", lineAudio: "audio/lines/p2-l2.mp3", t: 6.3 },
+          { en: "Come on, look up, find the first star in the sky", zh: "來吧，抬頭看，找到天空中的第一顆星星", lineAudio: "audio/lines/p2-l3.mp3", t: 10.5 },
+          { en: "I hope tomorrow will be sunny, too", zh: "希望明天也是晴朗的好天氣", lineAudio: "audio/lines/p2-l4.mp3", t: 15.5 }
         ]
       },
       {
         title: "第三段",
         audio: "audio/part3.mp3",
         lines: [
-          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p3-l1.mp3" },
-          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p3-l2.mp3" },
-          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p3-l3.mp3" },
-          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p3-l4.mp3" }
+          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p3-l1.mp3", t: 0 },
+          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p3-l2.mp3", t: 5.3 },
+          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p3-l3.mp3", t: 10 },
+          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p3-l4.mp3", t: 15 }
         ]
       },
       {
         title: "第四段",
         audio: "audio/part4.mp3",
         lines: [
-          { en: "It's raining and pouring, the moon's hiding away", zh: "大雨傾盆而下，月亮也躲了起來", lineAudio: "audio/lines/p4-l1.mp3" },
-          { en: "I think I can hear someone crying in the shade", zh: "我好像聽見有人在陰影中哭泣", lineAudio: "audio/lines/p4-l2.mp3" },
-          { en: "Don't worry I promise, there's no need to be afraid", zh: "別擔心，我向你保證，不需要害怕", lineAudio: "audio/lines/p4-l3.mp3" },
-          { en: "Someone's always calling out your name", zh: "總有人在呼喚你的名字", lineAudio: "audio/lines/p4-l4.mp3" }
+          { en: "It's raining and pouring, the moon's hiding away", zh: "大雨傾盆而下，月亮也躲了起來", lineAudio: "audio/lines/p4-l1.mp3", t: 1.6 },
+          { en: "I think I can hear someone crying in the shade", zh: "我好像聽見有人在陰影中哭泣", lineAudio: "audio/lines/p4-l2.mp3", t: 6.6 },
+          { en: "Don't worry I promise, there's no need to be afraid", zh: "別擔心，我向你保證，不需要害怕", lineAudio: "audio/lines/p4-l3.mp3", t: 11.1 },
+          { en: "Someone's always calling out your name", zh: "總有人在呼喚你的名字", lineAudio: "audio/lines/p4-l4.mp3", t: 15.7 }
         ]
       },
       {
         title: "第五段",
         audio: "audio/part5.mp3",
         lines: [
-          { en: "Come and count with me all the happy things", zh: "來吧，和我一起數數那些快樂的事", lineAudio: "audio/lines/p5-l1.mp3" },
-          { en: "So much joy you always bring", zh: "你總是帶來那麼多的歡樂", lineAudio: "audio/lines/p5-l2.mp3" },
-          { en: "Now it's time to go, I'll see you tomorrow", zh: "該出發了，明天見", lineAudio: "audio/lines/p5-l3.mp3" },
-          { en: "Memories will light the way back home", zh: "回憶將會照亮回家的路", lineAudio: "audio/lines/p5-l4.mp3" }
+          { en: "Come and count with me all the happy things", zh: "來吧，和我一起數數那些快樂的事", lineAudio: "audio/lines/p5-l1.mp3", t: 0 },
+          { en: "So much joy you always bring", zh: "你總是帶來那麼多的歡樂", lineAudio: "audio/lines/p5-l2.mp3", t: 5.5 },
+          { en: "Now it's time to go, I'll see you tomorrow", zh: "該出發了，明天見", lineAudio: "audio/lines/p5-l3.mp3", t: 10 },
+          { en: "Memories will light the way back home", zh: "回憶將會照亮回家的路", lineAudio: "audio/lines/p5-l4.mp3", t: 15.1 }
         ]
       },
       {
         title: "第六段",
         audio: "audio/part6.mp3",
         lines: [
-          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p6-l1.mp3" },
-          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p6-l2.mp3" },
-          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p6-l3.mp3" },
-          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p6-l4.mp3" }
+          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p6-l1.mp3", t: 0 },
+          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p6-l2.mp3", t: 5.5 },
+          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p6-l3.mp3", t: 10.5 },
+          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p6-l4.mp3", t: 15.5 }
         ]
       },
       {
         title: "第七段",
         audio: "audio/part7.mp3",
         lines: [
-          { en: "I will run to you through the forest where we played", zh: "我會朝你跑去，穿過我們曾經玩耍的森林", lineAudio: "audio/lines/p7-l1.mp3" },
-          { en: "Singing songs we made", zh: "唱著我們一起編的歌", lineAudio: "audio/lines/p7-l2.mp3" },
-          { en: "And I will fill both hands with flowers along the way", zh: "沿途摘滿雙手的花朵", lineAudio: "audio/lines/p7-l3.mp3" },
-          { en: "La-di la-di-da", zh: "啦滴 啦滴答", lineAudio: "audio/lines/p7-l4.mp3" }
+          { en: "I will run to you through the forest where we played", zh: "我會朝你跑去，穿過我們曾經玩耍的森林", lineAudio: "audio/lines/p7-l1.mp3", t: 1.8 },
+          { en: "Singing songs we made", zh: "唱著我們一起編的歌", lineAudio: "audio/lines/p7-l2.mp3", t: 7.4 },
+          { en: "And I will fill both hands with flowers along the way", zh: "沿途摘滿雙手的花朵", lineAudio: "audio/lines/p7-l3.mp3", t: 11.3 },
+          { en: "La-di la-di-da", zh: "啦滴 啦滴答", lineAudio: "audio/lines/p7-l4.mp3", t: 16.9 }
         ]
       },
       {
         title: "第八段",
         audio: "audio/part8.mp3",
         lines: [
-          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p8-l1.mp3" },
-          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p8-l2.mp3" },
-          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p8-l3.mp3" },
-          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p8-l4.mp3" },
-          { en: "Let's all come together now, point our fingers to the sky", zh: "大家聚在一起，把手指向天空", lineAudio: "audio/lines/p8-l5.mp3" }
+          { en: "Paprika, when our flowers start to bloom", zh: "Paprika，當我們的花朵綻放", lineAudio: "audio/lines/p8-l1.mp3", t: 0 },
+          { en: "Put the seeds into your hands and throw them in the sky", zh: "把種子捧在手心，拋向天空吧", lineAudio: "audio/lines/p8-l2.mp3", t: 6.3 },
+          { en: "Paprika, we can make our dreams come alive", zh: "Paprika，我們能讓夢想成真", lineAudio: "audio/lines/p8-l3.mp3", t: 11.5 },
+          { en: "Rain or shine, we'll find a way to play again another day", zh: "無論晴天或雨天，我們總會找到機會再一起玩耍", lineAudio: "audio/lines/p8-l4.mp3", t: 16.5 },
+          { en: "Let's all come together now, point our fingers to the sky", zh: "大家聯在一起，把手指向天空", lineAudio: "audio/lines/p8-l5.mp3", t: 20.8 }
         ]
       }
     ];
@@ -462,6 +474,7 @@
       audioPlayer.currentTime = 0;
       linePlayer.pause();
       linePlayer.currentTime = 0;
+      stopKtvSync();
       btnPlay.textContent = '▶ 播放本段';
     }
 
@@ -481,21 +494,67 @@
       }
     }
 
+    // --- KTV Sync ---
+    var ktvTimer = null;
+
+    function startKtvSync() {
+      stopKtvSync();
+      ktvTimer = setInterval(function() {
+        var time = audioPlayer.currentTime;
+        var lines = sections[currentSection].lines;
+        var cards = document.querySelectorAll('.lyric-card');
+        var activeIndex = -1;
+
+        for (var i = lines.length - 1; i >= 0; i--) {
+          if (time >= lines[i].t) {
+            activeIndex = i;
+            break;
+          }
+        }
+
+        for (var i = 0; i < cards.length; i++) {
+          if (i === activeIndex) {
+            if (!cards[i].classList.contains('ktv-active')) {
+              cards[i].classList.add('ktv-active');
+              // Scroll card into view smoothly
+              cards[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          } else {
+            cards[i].classList.remove('ktv-active');
+          }
+        }
+      }, 150);
+    }
+
+    function stopKtvSync() {
+      if (ktvTimer) {
+        clearInterval(ktvTimer);
+        ktvTimer = null;
+      }
+      var cards = document.querySelectorAll('.lyric-card');
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove('ktv-active');
+      }
+    }
+
     // --- Section audio playback ---
     function togglePlay() {
       if (!audioPlayer.paused) {
         audioPlayer.pause();
+        stopKtvSync();
         btnPlay.textContent = '▶ 播放本段';
       } else {
         linePlayer.pause();
         clearPlayingLineState();
         audioPlayer.src = sections[currentSection].audio;
         audioPlayer.play();
+        startKtvSync();
         btnPlay.textContent = '⏸ 暫停';
       }
     }
 
     audioPlayer.addEventListener('ended', function() {
+      stopKtvSync();
       btnPlay.textContent = '▶ 播放本段';
     });
 
